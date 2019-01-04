@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Pacifico|Raleway');
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -52,7 +54,7 @@ p, li {
   opacity: .8;
 }
 .section-content {
-    padding: 50px;
+    padding: 75px;
 }
 h3 span {
     font-size: 0.5em;
