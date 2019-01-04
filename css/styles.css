@@ -24,7 +24,7 @@ nav li {
 .styled {
     color: darkgoldenrod;
 }
-h3, .section-title, nav li, .accent {
+h3, .section-title, nav li {
     font-family: 'Oswald', sans-serif;
 }
 p, li {
@@ -43,6 +43,10 @@ p, li {
     background-image: url("https://images.pexels.com/photos/1036857/pexels-photo-1036857.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
 }
 .section-title h1 {
+    padding-top: 20vh;
+    letter-spacing: .2em;
+}
+#title h1{
     padding-top: 10vh;
 }
 .section-title {
@@ -76,8 +80,8 @@ li {
     border-right: 3px solid #333;
     border-left: 3px solid #333;
 }
-#footer-text {
-    padding: 100px 100px 20px;
+footer {
+  padding-top: 50px;
 }
 footer .social i {
     font-size: 2em;
