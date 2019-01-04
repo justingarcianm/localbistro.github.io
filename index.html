@@ -9,36 +9,45 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/styles.css">
-    <title>Hello, world!</title>
+    <title>Local Bistro</title>
 </head>
 
 <body>
     <main>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">name/logo</a>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i> Local Bistro</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                Menu
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Food</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Drinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <section class="parallax-1 text-center text-white section-title">
-            <h1 class="display-2">Name of Restuarant</h1>
+            <h1 class="display-1">Local Bistro</h1>
+            <h2>----- <i class="fas fa-utensils"></i> -----</h2>
+            <h3>Open From</h3>
+            <p>Monday - Friday: 8:00am - 10:00pm</p>
+            <p>Weekends: 8:00am - 12:00am</p>
         </section>
         <section class="section-content container-fluid">
             <div class="row">
@@ -47,8 +56,8 @@
                         class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-md text-center">
-                    <h3>Our Story</h3>
-                    <p>since 2010</p>
+                    <h3 class="styled">Our Story</h3>
+                    <p class="accent">since 2010</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, maxime impedit deserunt debitis
                         error reprehenderit temporibus! Voluptates, porro! Dicta harum quidem fugit architecto quo
                         repudiandae quod quasi, reprehenderit, explicabo natus provident illum facilis veniam cumque
@@ -58,8 +67,8 @@
             </div>
             <div class="row">
                 <div class="col-md text-center">
-                    <h3>Our approach</h3>
-                    <p>to staying fresh</p>
+                    <h3 class="styled">Our approach</h3>
+                    <p class="accent">to staying fresh</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, maxime impedit deserunt debitis
                         error reprehenderit temporibus! Voluptates, porro! Dicta harum quidem fugit architecto quo
                         repudiandae quod quasi, reprehenderit, explicabo natus provident illum facilis veniam cumque
@@ -245,21 +254,75 @@
             </div>
         </section>
         <header class="parallax-4 text-center text-white section-title">
-            <h1 class="display-2">Contact and Find Us</h1>
+            <h1 class="display-2">Contact and Find Us <br> <i class="fas fa-map-marker-alt"></i></h1>
+
         </header>
         <section class="section-content container-fluid">
-            <h3>Section content</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel itaque sequi odio sed voluptate
-                necessitatibus, aut eveniet aspernatur nulla atque!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, recusandae!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maiores molestiae consequuntur nisi,
-                illum repellat minima fuga suscipit laborum sunt natus nesciunt totam, quaerat libero.</p>
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center">find us!</h3>
+                    <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg"
+                        class="img-fluid" alt="Responsive image">
+                    <ul>
+                        <li>Hours: 9-11</li>
+                        <li>call us: 555-256-6996</li>
+                    </ul>
+                </div>
+                <div class="col text-center">
+                    <h3 class="styled">Reservation</h3>
+                    <h3>Book your table</h3>
+                    <h2 class="styled">- <i class="fas fa-utensils"></i> -</h2>
+                    <form>
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="your name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>8:00 am</option>
+                                <option>9:00 am</option>
+                                <option>10:00 am</option>
+                                <option>11:00 am</option>
+                                <option>12:00 pm</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1 person</option>
+                                <option>2 people</option>
+                                <option>3 people</option>
+                                <option>4 people</option>
+                                <option>5 people</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-dark" disabled>Find a Table</button>
+                    </form>
+                </div>
+            </div>
         </section>
-        <footer class="text-white">
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut totam quod ullam cum ex reprehenderit at
-                obcaecati nostrum aspernatur dolorum molestiae non eveniet expedita, eius incidunt maxime ab
-                accusantium nulla?</p>
+        <footer class="text-light text-center">
+            <div id="footer-text">
+                <h3 class="styled">Local Bistro</h3>
+                <p>22 Royal Street, Sundance Avenue, New York </p>
+                <p><span>RESERVATIONS NUMBER:</span> +00 25 854 78521 </p>
+                <p><span>WORKING HOURS:</span></p>
+                <p>MON- FRI: 08:00 AM - 10:00 PM </p>
+                <p>SAT - SUN: 10:00 AM - 11:00 PM</p>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div id="copyrights" class="text-left">
+                <p>&copy; Local Bistro 2019. All rights reserved</p>
+            </div>
         </footer>
     </main>
 

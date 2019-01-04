@@ -1,11 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Pacifico|Raleway');
+
 body {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: #eee;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav, footer {
+    background-color: #333;
+}
+nav li {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2em;
+}
+.navbar-dark .navbar-brand, .section-title .display-1, .styled {
+    font-family: 'Pacifico', cursive;
+}
+.styled {
+    color: darkgoldenrod;
+}
+h3, .section-title, nav li, .accent {
+    font-family: 'Oswald', sans-serif;
+}
+p, li {
+    font-family: 'Raleway', sans-serif;
 }
 .parallax-1 {
-    background-image: url("https://images.pexels.com/photos/34650/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-image: url("https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
 }
 .parallax-2 {
     background-image: url("https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
@@ -17,7 +41,7 @@ body {
     background-image: url("https://images.pexels.com/photos/1036857/pexels-photo-1036857.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
 }
 .section-title h1 {
-    padding-top: 20vh;
+    padding-top: 10vh;
 }
 .section-title {
     height: 50vh;
@@ -50,7 +74,11 @@ li {
     border-right: 3px solid #333;
     border-left: 3px solid #333;
 }
-footer {
-    height: 25vh;
-    background-color: #333;
+#footer-text {
+    padding: 100px 100px 20px;
+}
+footer .social i {
+    font-size: 2em;
+    margin: 20px;
+    color: #eee;
 }
