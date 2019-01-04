@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #eee;
+}
+.parallax-1 {
+    background-image: url("https://images.pexels.com/photos/34650/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260");
+}
+.parallax-2 {
+    background-image: url("https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+}
+.parallax-3 {
+    background-image: url("https://images.pexels.com/photos/370984/pexels-photo-370984.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+}
+.parallax-4 {
+    background-image: url("https://images.pexels.com/photos/1036857/pexels-photo-1036857.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+}
+.section-title h1 {
+    padding-top: 20vh;
+}
+.section-title {
+    height: 50vh;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .8;
+}
+.section-content {
+    padding: 50px;
+}
+h3 span {
+    font-size: 0.5em;
+    color: #999;
+}
+li {
+    list-style: none;
+}
+.menu {
+    border-top: 3px solid #333;
+    border-right: 3px solid #333;
+    border-left: 3px solid #333;
+}
+.menu .row, .drinks .row {
+    padding: 20px;
+}
+.drinks {
+    border-bottom: 3px solid #333;
+    border-right: 3px solid #333;
+    border-left: 3px solid #333;
+}
+footer {
+    height: 25vh;
+    background-color: #333;
+}
