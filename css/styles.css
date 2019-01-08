@@ -14,15 +14,16 @@ nav, footer {
     background-color: #333;
 }
 nav li {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 1.2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
 }
 .navbar-dark .navbar-brand, .section-title .display-1, .styled {
     font-family: 'Pacifico', cursive;
 }
 .styled {
-    color: darkgoldenrod;
+    color: rgb(226, 182, 63);
 }
 h3, .section-title, nav li {
     font-family: 'Oswald', sans-serif;
@@ -67,10 +68,21 @@ h3 span {
 li {
     list-style: none;
 }
+#about {
+    font-size: 1.2rem;
+    line-height: 2em;
+}
+#about h2 {
+    font-size: 5em;
+    margin-top: 40px;
+}
 .menu {
     border-top: 3px solid #333;
     border-right: 3px solid #333;
     border-left: 3px solid #333;
+}
+.food-mobile, .drinks-mobile {
+    display: none;
 }
 .menu .row, .drinks .row {
     padding: 20px;
@@ -80,6 +92,12 @@ li {
     border-right: 3px solid #333;
     border-left: 3px solid #333;
 }
+#contact {
+    height: 600px;
+}
+#map {
+    height: 100%;
+  }
 footer {
   padding-top: 50px;
 }
@@ -87,4 +105,40 @@ footer .social i {
     font-size: 2em;
     margin: 20px;
     color: #eee;
+}
+
+@media (max-width: 990px) {
+    #about {
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+    #about h2 {
+        display: none;
+    }
+}
+
+@media (max-width: 766px) {
+    #map {
+        width: 80%;
+        height: 400px;
+        margin: auto;
+    }
+    #contact {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 752px) {
+    .section-title {
+        height: 500px;
+    }
+}
+
+@media (max-width: 575px) {
+   .menu, .drinks {
+       display: none;
+   }
+   .food-mobile, .drinks-mobile {
+       display: block;
+   }
 }
