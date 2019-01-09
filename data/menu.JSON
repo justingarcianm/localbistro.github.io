@@ -1,0 +1,201 @@
+{
+    "food": {
+        "breakfast": [
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            },
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            },
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            }
+        ],
+        "lunch": [
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            },
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            },
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            }
+        ],
+        "dinner": [
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            },
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            },
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            }
+        ],
+        "dessert": [
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            },
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            },
+            {
+                "title": "Ham and eggs",
+                "price": 12,
+                "desc": "2 eggs cooked any style and a slice of ham"
+            }
+        ]
+    },
+    "drinks": {
+        "wine": [
+            {
+                "white": [
+                    {
+                        "title": "Chardonay",
+                        "price_small": 15,
+                        "price_bottle": 50
+                    },
+                    {
+                        "title": "Chardonay",
+                        "price_small": 15,
+                        "price_bottle": 50
+                    },
+                    {
+                        "title": "Chardonay",
+                        "price_small": 15,
+                        "price_bottle": 50
+                    }
+                ],
+                "red": [
+                    {
+                        "title": "Chardonay",
+                        "price_small": 15,
+                        "price_bottle": 50
+                    },
+                    {
+                        "title": "Chardonay",
+                        "price_small": 15,
+                        "price_bottle": 50
+                    },
+                    {
+                        "title": "Chardonay",
+                        "price_small": 15,
+                        "price_bottle": 50
+                    }
+                ],
+                "dessert": [
+                    {
+                        "title": "Chardonay",
+                        "price_small": 15,
+                        "price_bottle": 50
+                    },
+                    {
+                        "title": "Chardonay",
+                        "price_small": 15,
+                        "price_bottle": 50
+                    },
+                    {
+                        "title": "Chardonay",
+                        "price_small": 15,
+                        "price_bottle": 50
+                    }
+                ]
+            }
+        ],
+        "beer": [
+            {
+                "domestic": [
+                    {
+                        "title": "budwiser",
+                        "priceSmall": 3,
+                        "priceLarge": 5
+                    },
+                    {
+                        "title": "budwiser",
+                        "priceSmall": 3,
+                        "priceLarge": 5
+                    },
+                    {
+                        "title": "budwiser",
+                        "priceSmall": 3,
+                        "priceLarge": 5
+                    }
+                ],
+                "imported": [
+                    {
+                        "title": "stella artois",
+                        "priceSmall": 4,
+                        "priceLarge": 6
+                    },
+                    {
+                        "title": "stella artois",
+                        "priceSmall": 4,
+                        "priceLarge": 6
+                    },
+                    {
+                        "title": "stella artois",
+                        "priceSmall": 4,
+                        "priceLarge": 6
+                    }
+                ],
+                "local": [
+                    {
+                        "title": "marble IPA",
+                        "priceSmall": 4,
+                        "priceLarge": 6
+                    },
+                    {
+                        "title": "marble IPA",
+                        "priceSmall": 4,
+                        "priceLarge": 6
+                    }
+                ]
+            }
+        ],
+        "coffee": [
+            {
+                "title": "brew",
+                "price": 2
+            },
+            {
+                "title": "brew",
+                "price": 2
+            },
+            {
+                "title": "brew",
+                "price": 2
+            },
+            {
+                "title": "brew",
+                "price": 2
+            },
+            {
+                "title": "brew",
+                "price": 2
+            }
+        ]
+    }
+}
