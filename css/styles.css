@@ -125,7 +125,7 @@ footer .social i {
 #copyrights {
     text-align: left;
 }
-
+/* media for about section */
 @media (max-width: 990px) {
     #about {
         font-size: 1rem;
@@ -138,7 +138,7 @@ footer .social i {
         padding-top: 20px;
     }
 }
-
+/* media for contact section */
 @media (max-width: 766px) {
     #map {
         width: 80%;
@@ -148,8 +148,8 @@ footer .social i {
     #contact {
         height: 1000px;
     }
-
 }
+/* media for parallax title cards */
 @media (max-width:691px) {
     .section-title {
         padding: 100px;
@@ -160,7 +160,7 @@ footer .social i {
         padding: 100px 50px 50px;
     }
 }
-
+/* media for menu section */
 @media (max-width: 575px) {
    .menu, .drinks {
        display: none;
@@ -176,7 +176,7 @@ footer .social i {
     height: 300px;
 }
     }
-
+/* general media queries */
     @media (max-width:400px) {
         #title {
             padding: 100px 25px 25px;
