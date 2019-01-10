@@ -1,3 +1,6 @@
+// The foloowing code will load the loacl json file then take that  info and place it onto the html page.
+// This should safe space and allow the opportunity to update the restaurants menu without changing the menu itslef.
+
 const xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {

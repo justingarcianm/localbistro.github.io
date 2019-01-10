@@ -3,69 +3,84 @@
         "breakfast": [
             {
                 "title": "Ham and eggs",
-                "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "price": 8,
+                "desc": "2 eggs cooked any style and a slice of ham topped with parsley"
             },
             {
-                "title": "Ham and eggs",
-                "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "title": "Pancake platter",
+                "price": 10,
+                "desc": "2 buttermilk pancakes with your choice of side"
             },
             {
-                "title": "Ham and eggs",
-                "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "title": "Rise and shine burrito",
+                "price": 7.50,
+                "desc": "eggs, your choice of meat, cheese, and chile wrapped in a flour tortilla"
+            },
+            {
+                "title": "power bowl",
+                "price": 10.50,
+                "desc": "yogurt topped with granola with a side of fruit"
             }
         ],
         "lunch": [
             {
-                "title": "Ham and eggs",
+                "title": "Local break burger",
                 "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "desc": "one patty with cheese, guacamole, and chioce of chile between a sesame bun"
             },
             {
-                "title": "Ham and eggs",
-                "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "title": "street style tacos",
+                "price": 12.50,
+                "desc": "3 tacos with the chioce of chicken, beef, or fish topped with cilantro, pico de galo, and a side of lemon"
             },
             {
-                "title": "Ham and eggs",
+                "title": "Prosciutto salad",
                 "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "desc": "mixed greens, sliced pears, sprinkled pecans, bleu cheese, and topped with a balsamic vinegar"
+            },
+            {
+                "title": "Choice sandwich",
+                "price": 10,
+                "desc": "choice of bread, choice of meat, choice of cheese, you get the picture"
             }
         ],
         "dinner": [
             {
-                "title": "Ham and eggs",
-                "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "title": "Grilled Salmon",
+                "price": 18,
+                "desc": "topped with couscous, creamy sause, and a side of asparagus"
             },
             {
-                "title": "Ham and eggs",
-                "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "title": "Grilled Lemon Pepper Chicken",
+                "price": 13,
+                "desc": "2 chicken breasts sauteed in a lemon pepper sauce served on top of a vegetable medley"
             },
             {
-                "title": "Ham and eggs",
+                "title": "Portobella Burger",
                 "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "desc": "Portobella cap, melted mozzarella, tomato and basil with a ricotta spread"
+            },
+            {
+                "title": "Pasta Alfredo",
+                "price": 16,
+                "desc": "Homemade creamy Alfredo sauce and Italian sausage"
             }
         ],
         "dessert": [
             {
-                "title": "Ham and eggs",
-                "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "title": "Apple Crisp",
+                "price": 6,
+                "desc": "vanilla ice cream and caramel drizzle"
             },
             {
-                "title": "Ham and eggs",
-                "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "title": "Chocolate Cream Pie Crêpes ",
+                "price": 7,
+                "desc": " Brown sugar meringue crisp, hibiscus syrup"
             },
             {
-                "title": "Ham and eggs",
-                "price": 12,
-                "desc": "2 eggs cooked any style and a slice of ham"
+                "title": "Cheese Plate Sampler",
+                "price": 10,
+                "desc": "a selection of four cheeses served in tasting portions with house-made jam and fruit garnish"
             }
         ]
     },
@@ -74,34 +89,34 @@
             {
                 "white": [
                     {
-                        "title": "Chardonay",
-                        "price_small": 15,
-                        "price_bottle": 50
+                        "title": "Chardonnay, California ",
+                        "price_small": 10,
+                        "price_bottle": 40
                     },
                     {
-                        "title": "Chardonay",
-                        "price_small": 15,
-                        "price_bottle": 50
+                        "title": "Pino Grigio, Oregon",
+                        "price_small": 9,
+                        "price_bottle": 36
                     },
                     {
-                        "title": "Chardonay",
-                        "price_small": 15,
-                        "price_bottle": 50
+                        "title": "Sauvignon Blanc, New Zeland",
+                        "price_small": 11,
+                        "price_bottle": 40
                     }
                 ],
                 "red": [
                     {
-                        "title": "Chardonay",
-                        "price_small": 15,
+                        "title": "Merlot, Italy",
+                        "price_small": 10,
+                        "price_bottle": 40
+                    },
+                    {
+                        "title": "Malbec, Argentina",
+                        "price_small": 8,
                         "price_bottle": 50
                     },
                     {
-                        "title": "Chardonay",
-                        "price_small": 15,
-                        "price_bottle": 50
-                    },
-                    {
-                        "title": "Chardonay",
+                        "title": "Cotes de Rhone Rouge, France ",
                         "price_small": 15,
                         "price_bottle": 50
                     }
@@ -129,48 +144,43 @@
             {
                 "domestic": [
                     {
-                        "title": "budwiser",
+                        "title": "Budwiser",
                         "priceSmall": 3,
                         "priceLarge": 5
                     },
                     {
-                        "title": "budwiser",
-                        "priceSmall": 3,
-                        "priceLarge": 5
-                    },
-                    {
-                        "title": "budwiser",
-                        "priceSmall": 3,
+                        "title": "Coors Light",
+                        "priceSmall": 4,
                         "priceLarge": 5
                     }
                 ],
                 "imported": [
                     {
-                        "title": "stella artois",
-                        "priceSmall": 4,
+                        "title": "Stella Artois",
+                        "priceSmall": 4.75,
                         "priceLarge": 6
                     },
                     {
-                        "title": "stella artois",
-                        "priceSmall": 4,
+                        "title": "Dos Equis Lager",
+                        "priceSmall": 4.75,
                         "priceLarge": 6
                     },
                     {
-                        "title": "stella artois",
-                        "priceSmall": 4,
-                        "priceLarge": 6
+                        "title": "Guinness",
+                        "priceSmall": 6.50,
+                        "priceLarge": 7
                     }
                 ],
                 "local": [
                     {
-                        "title": "marble IPA",
-                        "priceSmall": 4,
-                        "priceLarge": 6
+                        "title": "La Cumbre Elevated IPA",
+                        "priceSmall": 5.50,
+                        "priceLarge": 7
                     },
                     {
-                        "title": "marble IPA",
-                        "priceSmall": 4,
-                        "priceLarge": 6
+                        "title": "Marble Double White",
+                        "priceSmall": 6,
+                        "priceLarge": 8
                     }
                 ]
             }
@@ -181,20 +191,20 @@
                 "price": 2
             },
             {
-                "title": "brew",
-                "price": 2
+                "title": "espresso",
+                "price": 1.50
             },
             {
-                "title": "brew",
-                "price": 2
+                "title": "cappuccino",
+                "price": 4.50
             },
             {
-                "title": "brew",
-                "price": 2
+                "title": "Latte",
+                "price": 4.50
             },
             {
-                "title": "brew",
-                "price": 2
+                "title": "Flavored Latte",
+                "price": 5.50
             }
         ]
     }

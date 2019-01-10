@@ -81,8 +81,12 @@ li {
     border-right: 3px solid #333;
     border-left: 3px solid #333;
 }
+.menu .breakfast, .menu .lunch, .menu .dinner, .menu .dessert {
+    padding: 20px;
+}
 .food-mobile, .drinks-mobile {
     display: none;
+    line-height: 2em;
 }
 .food-mobile button, .drinks-mobile button{
    color: #333;
@@ -91,6 +95,7 @@ li {
 }
 .menu .row, .drinks .row {
     padding: 20px;
+    line-height: 2em;
 }
 .drinks, .drinks-mobile {
     border-bottom: 3px solid #333;
