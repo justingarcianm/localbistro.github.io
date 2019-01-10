@@ -123,19 +123,14 @@
                 ],
                 "dessert": [
                     {
-                        "title": "Chardonay",
-                        "price_small": 15,
-                        "price_bottle": 50
+                        "title": "Rose",
+                        "price_small": 12,
+                        "price_bottle": 40
                     },
                     {
-                        "title": "Chardonay",
+                        "title": "Port",
                         "price_small": 15,
-                        "price_bottle": 50
-                    },
-                    {
-                        "title": "Chardonay",
-                        "price_small": 15,
-                        "price_bottle": 50
+                        "price_bottle": 60
                     }
                 ]
             }
