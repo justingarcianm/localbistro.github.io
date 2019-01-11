@@ -21,17 +21,30 @@ xhttp.onreadystatechange = function () {
             lunch = response.food.lunch,
             dinner = response.food.dinner,
             dessert = response.food.dessert;
+
+        // possible function to take in multiple parameters to lessen code
+
+        // function food(props) {
+        //     for (var i = 0; i < response.food.props.length; i++) {
+        //         props.output += '<li>' + '<strong>' + response.food.props[i].title + ' - ' + response.food.props[i].price + '</strong> <br>' + response.food.props[i].desc + '</li>';
+        //     }
+        // }
+        // food({
+        //     breakfast,
+        //     output: outputB
+        // });
+
         // loop through json and place into outputs
 
         // breakfast
         for (var i = 0; i < breakfast.length; i++) {
             outputB += '<li>' + '<strong>' + breakfast[i].title + ' - ' + breakfast[i].price + '</strong> <br>' + breakfast[i].desc + '</li>';
         }
-        // lunch
+        // // // lunch
         for (var i = 0; i < lunch.length; i++) {
             outputL += '<li>' + '<strong>' + lunch[i].title + ' - ' + lunch[i].price + '</strong> <br>' + lunch[i].desc + '</li>';
         }
-        // dinner
+        // // // dinner
         for (var i = 0; i < dinner.length; i++) {
             outputD += '<li>' + '<strong>' + dinner[i].title + ' - ' + dinner[i].price + '</strong> <br>' + dinner[i].desc + '</li>';
         }

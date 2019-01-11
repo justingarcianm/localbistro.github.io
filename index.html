@@ -47,7 +47,7 @@
             <h2 class="styled">- <i class="fas fa-utensils"></i> -</h2>
             <h3>Open From</h3>
             <p>Monday - Friday: 8:00am - 10:00pm</p>
-            <p>Weekends: 8:00am - 12:00am</p>
+            <p>Weekends: 10:00am - 11:00am</p>
         </section>
         <!-- ABOUT NAV-->
         <section class="section-content container-fluid" id="about">
@@ -330,8 +330,11 @@
                     <!-- GOOGLE MAPS API -->
                     <div id="map"></div>
                     <ul>
-                        <li>Hours: 9-11</li>
-                        <li>call us: 555-256-6996</li>
+                        <li>22 Main Street, ABQCity, New Mexico </li>
+                        <li><span>RESERVATIONS NUMBER:</span> +00 25 854 78521 </li>
+                        <li><span>WORKING HOURS:</span></li>
+                        <li>MON- FRI: 08:00 AM - 10:00 PM </li>
+                        <li>SAT - SUN: 10:00 AM - 11:00 PM</li>
                     </ul>
                 </div>
                 <div class="col-md text-center">
@@ -386,7 +389,7 @@
             <div class="row">
                 <div class="col-12">
                     <h3 class="styled">Local Bistro</h3>
-                    <p>22 Royal Street, Sundance Avenue, New York </p>
+                    <p>22 Main Street, ABQCity, New Mexico </p>
                     <p><span>RESERVATIONS NUMBER:</span> +00 25 854 78521 </p>
                     <p><span>WORKING HOURS:</span></p>
                     <p>MON- FRI: 08:00 AM - 10:00 PM </p>
@@ -409,16 +412,28 @@
     </main>
     <!-- GOOGLE MAP API INIT -->
     <script>
-        var map;
         function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 35.0995543, lng: -106.6074163 },
-                zoom: 12
+            var options = {
+                zoom: 12,
+                center: { lat: 35.106766, lng: -106.629181 }
+            }
+            var map = new google.maps.Map(document.getElementById("map"), options);
+
+            // add marker
+            var marker = new google.maps.Marker({
+                position: { lat: 35.083237, lng: -106.642006 },
+                map: map
             });
-        }</script>
+            var infoWindow = new google.maps.InfoWindow({
+                content: '<h3>Local Bistro</h3><p>22 Main Street,</p><p>ABQCity, New Mexico</p>'
+            });
+            marker.addListener("click", function () {
+                infoWindow.open(map, marker);
+            });
+        }
+    </script>
     <script src="data/menu.JSON"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrq6kWXm4b3uo6e7wGJg3G4OB2UQfKDl8&callback=initMap"
-        async defer></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrq6kWXm4b3uo6e7wGJg3G4OB2UQfKDl8&callback=initMap"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

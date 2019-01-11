@@ -104,7 +104,7 @@ li {
     border-left: 3px solid #333;
 }
 #contact {
-    height: 600px;
+    height: 700px;
 }
 #map {
     height: 100%;
@@ -121,6 +121,9 @@ footer .social i {
     font-size: 2em;
     margin: 20px;
     color: #eee;
+}
+footer .social {
+    text-align: right;
 }
 #copyrights {
     text-align: left;
@@ -175,6 +178,13 @@ footer .social i {
 #map {
     height: 300px;
 }
+#copyrights {
+    font-size: .6em;
+    text-align: center;
+}
+.social {
+    text-align: center;
+}
     }
 /* general media queries */
     @media (max-width:400px) {
@@ -183,10 +193,6 @@ footer .social i {
         }
         .section-title {
             padding: 50px;
-        }
-        #copyrights {
-            font-size: .6em;
-            text-align: center;
         }
         #map {
             height: 200px;
