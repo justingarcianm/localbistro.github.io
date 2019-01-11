@@ -106,6 +106,9 @@ li {
 #contact {
     height: 700px;
 }
+#contact ul {
+    padding: 10px;
+}
 #map {
     height: 100%;
   }
@@ -149,7 +152,10 @@ footer .social {
         margin: auto;
     }
     #contact {
-        height: 1000px;
+        height: 100%;
+    }
+    #contact ul {
+        text-align: center;
     }
 }
 /* media for parallax title cards */
@@ -157,13 +163,27 @@ footer .social {
     .section-title {
         padding: 100px;
     }
+    #contact ul li {
+        font-size: .8em;
+    }
 }
 @media (max-width:500px) {
     #title {
         padding: 100px 50px 50px;
     }
+    form {
+        width: 100%;
+    }
 }
-/* media for menu section */
+@media (max-width:400px) {
+    #title {
+        padding: 100px 25px 25px;
+    }
+    .section-title {
+        padding: 50px;
+    }
+}
+/* general media */
 @media (max-width: 575px) {
    .menu, .drinks {
        display: none;
@@ -176,25 +196,13 @@ footer .social {
     color: #999;
 }
 #map {
-    height: 300px;
+    width: 100%;
 }
 #copyrights {
     font-size: .6em;
     text-align: center;
 }
-.social {
+footer .social {
     text-align: center;
 }
-    }
-/* general media queries */
-    @media (max-width:400px) {
-        #title {
-            padding: 100px 25px 25px;
-        }
-        .section-title {
-            padding: 50px;
-        }
-        #map {
-            height: 200px;
-        }
     }
