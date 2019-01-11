@@ -168,5 +168,5 @@ xhttp.onreadystatechange = function () {
         }
     }
 };
-xhttp.open("GET", "../data/menu.JSON", true);
+xhttp.open("GET", "https://raw.githubusercontent.com/justingarcianm/localbistro.github.io/master/data/menu.JSON", true);
 xhttp.send();
