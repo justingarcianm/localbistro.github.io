@@ -1,4 +1,4 @@
-// The foloowing code will load the loacl json file then take that  info and place it onto the html page.
+// The foloowing code will load the locall json file then take that  info and place it onto the html page.
 // This should safe space and allow the opportunity to update the restaurants menu without changing the menu itslef.
 
 const xhttp = new XMLHttpRequest();
@@ -9,7 +9,7 @@ xhttp.onreadystatechange = function () {
 
         // food
         // breakfast output
-        var outputB = "",
+        let outputB = "",
             // lunch output
             outputL = "",
             // output dinner
@@ -24,61 +24,62 @@ xhttp.onreadystatechange = function () {
 
         // possible function to take in multiple parameters to lessen code
 
+        // const breakfastComp = {
+        //     title : breakfast[0]
+        // }
+
         // function food(props) {
-        //     for (var i = 0; i < response.food.props.length; i++) {
-        //         props.output += '<li>' + '<strong>' + response.food.props[i].title + ' - ' + response.food.props[i].price + '</strong> <br>' + response.food.props[i].desc + '</li>';
+        //     for (var i = 0; i < props.response.food.length; i++) {
+        //     props.output += '<li>' + '<strong>' + props.response.food[i].title + ' - ' + props.response.food[i].price + '</strong> <br>' + props.response.food[i].desc + '</li>';
         //     }
         // }
-        // food({
-        //     breakfast,
-        //     output: outputB
-        // });
+        // food(breakfast);
 
         // loop through json and place into outputs
 
         // breakfast
-        for (var i = 0; i < breakfast.length; i++) {
-            outputB += '<li>' + '<strong>' + breakfast[i].title + ' - ' + breakfast[i].price + '</strong> <br>' + breakfast[i].desc + '</li>';
+        for (let i = 0; i < breakfast.length; i++) {
+            outputB += `<li><strong> ${breakfast[i].title} - ${breakfast[i].price} </strong><br> ${breakfast[i].desc}</li>`
         }
         // // // lunch
-        for (var i = 0; i < lunch.length; i++) {
-            outputL += '<li>' + '<strong>' + lunch[i].title + ' - ' + lunch[i].price + '</strong> <br>' + lunch[i].desc + '</li>';
+        for (let i = 0; i < lunch.length; i++) {
+            outputL += `<li> <strong> ${lunch[i].title}  -  ${lunch[i].price} </strong> <br> ${lunch[i].desc} </li>`;
         }
         // // // dinner
-        for (var i = 0; i < dinner.length; i++) {
-            outputD += '<li>' + '<strong>' + dinner[i].title + ' - ' + dinner[i].price + '</strong> <br>' + dinner[i].desc + '</li>';
+        for (let i = 0; i < dinner.length; i++) {
+            outputD += `<li> <strong> ${dinner[i].title}  -  ${dinner[i].price} </strong> <br> ${dinner[i].desc} </li>'`;
         }
         // dessert
-        for (var i = 0; i < dessert.length; i++) {
-            outputDe += '<li>' + '<strong>' + dessert[i].title + ' - ' + dessert[i].price + '</strong> <br>' + dessert[i].desc + '</li>';
+        for (let i = 0; i < dessert.length; i++) {
+            outputDe += `<li><strong> ${dessert[i].title}  -  ${dessert[i].price} </strong><br> ${dessert[i].desc}</li>`;
         }
         // display outputs to both mobile and desktop menus
 
         // breakfast
-        var bMenu = document.querySelectorAll(".breakfast");
-        for (var i = 0; i < bMenu.length; i++) {
+        const bMenu = document.querySelectorAll(".breakfast");
+        for (let i = 0; i < bMenu.length; i++) {
             bMenu[i].innerHTML = outputB;
         }
         // lunch
-        var lMenu = document.querySelectorAll(".lunch");
-        for (var i = 0; i < bMenu.length; i++) {
+        const lMenu = document.querySelectorAll(".lunch");
+        for (let i = 0; i < bMenu.length; i++) {
             lMenu[i].innerHTML = outputL;
         }
         // dinner
-        var dMenu = document.querySelectorAll(".dinner");
-        for (var i = 0; i < dMenu.length; i++) {
+        const dMenu = document.querySelectorAll(".dinner");
+        for (let i = 0; i < dMenu.length; i++) {
             dMenu[i].innerHTML = outputD;
         }
         // dessert
-        var deMenu = document.querySelectorAll(".dessert");
-        for (var i = 0; i < deMenu.length; i++) {
+        const deMenu = document.querySelectorAll(".dessert");
+        for (let i = 0; i < deMenu.length; i++) {
             deMenu[i].innerHTML = outputDe;
         }
 
         // drink outputs
 
         // white wine
-        var outputWw = "",
+        let outputWw = "",
             // red wine
             outputWr = "",
             // dessert wine
@@ -101,69 +102,69 @@ xhttp.onreadystatechange = function () {
             coffee = response.drinks.coffee;
 
         // white wine
-        for (var i = 0; i < wineWhite.length; i++) {
-            outputWw += '<li>' + wineWhite[i].title + ' - ' + wineWhite[i].price_small + '/' + wineWhite[i].price_bottle + '</li>';
+        for (let i = 0; i < wineWhite.length; i++) {
+            outputWw += `<li> ${wineWhite[i].title}  -  ${wineWhite[i].price_small} /${wineWhite[i].price_bottle} </li>`;
         }
         // red wine
-        for (var i = 0; i < wineRed.length; i++) {
-            outputWr += '<li>' + wineRed[i].title + ' - ' + wineRed[i].price_small + '/' + wineRed[i].price_bottle + '</li>';
+        for (let i = 0; i < wineRed.length; i++) {
+            outputWr += `<li> ${wineRed[i].title}  -  ${wineRed[i].price_small} / ${wineRed[i].price_bottle} </li>`;
         }
         // dessert wine
-        for (var i = 0; i < wineDessert.length; i++) {
-            outputWd += '<li>' + wineDessert[i].title + ' - ' + wineDessert[i].price_small + '/' + wineDessert[i].price_bottle + '</li>';
+        for (let i = 0; i < wineDessert.length; i++) {
+            outputWd += `<li> ${wineDessert[i].title}  -  ${wineDessert[i].price_small} / ${wineDessert[i].price_bottle} </li>`;
         }
         // domestic beer
-        for (var i = 0; i < beerDomestic.length; i++) {
-            outputBd += '<li>' + beerDomestic[i].title + ' - ' + beerDomestic[i].priceSmall + '/' + beerDomestic[i].priceLarge + '</li>';
+        for (let i = 0; i < beerDomestic.length; i++) {
+            outputBd += `<li> ${beerDomestic[i].title}  -  ${beerDomestic[i].priceSmall} / ${beerDomestic[i].priceLarge} </li>`;
         }
         // imported beer
-        for (var i = 0; i < beerImported.length; i++) {
-            outputBi += '<li>' + beerImported[i].title + ' - ' + beerImported[i].priceSmall + '/' + beerImported[i].priceLarge + '</li>';
+        for (let i = 0; i < beerImported.length; i++) {
+            outputBi += `<li> ${beerImported[i].title}  -  ${beerImported[i].priceSmall} / ${beerImported[i].priceLarge} </li>`;
         }
         // local beer
-        for (var i = 0; i < beerLocal.length; i++) {
-            outputBl += '<li>' + beerLocal[i].title + ' - ' + beerLocal[i].priceSmall + '/' + beerLocal[i].priceLarge + '</li>';
+        for (let i = 0; i < beerLocal.length; i++) {
+            outputBl += `<li> ${beerLocal[i].title}  -  ${beerLocal[i].priceSmall} /${beerLocal[i].priceLarge}</li > `;
         }
         // coffee
-        for (var i = 0; i < coffee.length; i++) {
-            outputC += '<li>' + coffee[i].title + ' - ' + coffee[i].price + '</li>';
+        for (let i = 0; i < coffee.length; i++) {
+            outputC += `<li> ${coffee[i].title}  - ${coffee[i].price} </li>`;
         }
 
         // display outputs to both mobile and desktop menus
 
         // white wine
-        var wwMenu = document.querySelectorAll(".white");
-        for (var i = 0; i < wwMenu.length; i++) {
+        const wwMenu = document.querySelectorAll(".white");
+        for (let i = 0; i < wwMenu.length; i++) {
             wwMenu[i].innerHTML = outputWw;
         }
         // red wine
-        var wrMenu = document.querySelectorAll(".red");
-        for (var i = 0; i < wrMenu.length; i++) {
+        const wrMenu = document.querySelectorAll(".red");
+        for (let i = 0; i < wrMenu.length; i++) {
             wrMenu[i].innerHTML = outputWr;
         }
         // dessert
-        var wdMenu = document.querySelectorAll(".wineDessert");
-        for (var i = 0; i < wdMenu.length; i++) {
+        const wdMenu = document.querySelectorAll(".wineDessert");
+        for (let i = 0; i < wdMenu.length; i++) {
             wdMenu[i].innerHTML = outputWd;
         }
         // domestic beer
-        var bdMenu = document.querySelectorAll(".domestic");
-        for (var i = 0; i < bdMenu.length; i++) {
+        const bdMenu = document.querySelectorAll(".domestic");
+        for (let i = 0; i < bdMenu.length; i++) {
             bdMenu[i].innerHTML = outputBd;
         }
         // imported beer
-        var biMenu = document.querySelectorAll(".imported");
-        for (var i = 0; i < biMenu.length; i++) {
+        const biMenu = document.querySelectorAll(".imported");
+        for (let i = 0; i < biMenu.length; i++) {
             biMenu[i].innerHTML = outputBi;
         }
         // local beer
-        var blMenu = document.querySelectorAll(".local");
-        for (var i = 0; i < blMenu.length; i++) {
+        const blMenu = document.querySelectorAll(".local");
+        for (let i = 0; i < blMenu.length; i++) {
             blMenu[i].innerHTML = outputBl;
         }
         // coffee
-        var cMenu = document.querySelectorAll(".coffee");
-        for (var i = 0; i < cMenu.length; i++) {
+        const cMenu = document.querySelectorAll(".coffee");
+        for (let i = 0; i < cMenu.length; i++) {
             cMenu[i].innerHTML = outputC;
         }
     }
